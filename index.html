@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sharon Kumar — Portfolio</title>
+  <meta name="description" content="Portfolio of Sharon Kumar — web developer & designer." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1><a href="#hero">Sharon Kumar</a></h1>
+        <p class="tag">Web Developer & Designer</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Hi — I'm Sharon.</h2>
+          <p class="lead">I build accessible, performant web experiences. I focus on front‑end development, UI design, and clean code.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn ghost" href="assets/Sharon-Kumar-Resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-avatar" aria-hidden="true">
+          <div class="avatar-placeholder">SK</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>About</h3>
+      <p>
+        I'm a web developer who enjoys turning ideas into products. I work with HTML, CSS, JavaScript and modern frameworks.
+        I care about accessibility, performance and thoughtful design.
+      </p>
+    </section>
+
+    <section id="projects" class="section container">
+      <h3>Projects</h3>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-media">Project image</div>
+          <h4>Project One</h4>
+          <p>A short description of the project, tech used, and the problem it solves.</p>
+          <p class="project-tags">React · CSS · API</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live</a>
+            <a href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">Project image</div>
+          <h4>Project Two</h4>
+          <p>A short description of the project, tech used, and the problem it solves.</p>
+          <p class="project-tags">Vanilla JS · Accessibility</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live</a>
+            <a href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media">Project image</div>
+          <h4>Project Three</h4>
+          <p>A short description of the project, tech used, and the problem it solves.</p>
+          <p class="project-tags">Design · Prototyping</p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">Live</a>
+            <a href="#" target="_blank" rel="noopener">Case Study</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h3>Skills</h3>
+      <ul class="skills-list">
+        <li>HTML & semantic markup</li>
+        <li>Responsive CSS (Flexbox / Grid)</li>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Next.js</li>
+        <li>Accessibility (a11y)</li>
+        <li>Performance optimization</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h3>Contact</h3>
+      <p>Interested in working together? Send me a message.</p>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" id="message" rows="6" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send message</button>
+          <a class="btn ghost" href="mailto:youremail@example.com">Email me</a>
+        </div>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Sharon Kumar. Built with ❤️.</p>
+      <div class="social">
+        <a href="#" aria-label="GitHub" title="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter" title="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
