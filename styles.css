@@ -77,3 +77,45 @@ body{
   .avatar-placeholder{width:120px;height:120px}
   .footer-inner{flex-direction:column;align-items:flex-start}
 }
+/* === THEME FIX OVERRIDES === */
+
+/* Default (no class) behaves like dark theme */
+html,
+html.theme-dark {
+  background-color: #020617;
+}
+
+html,
+html.theme-dark body {
+  background-color: #020617;
+  color: #f9fafb;
+}
+
+/* Light theme: lighter background + dark text */
+html.theme-light body {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Make sure main sections are readable in light mode */
+html.theme-light .site-header,
+html.theme-light .site-footer,
+html.theme-light .section,
+html.theme-light .hero,
+html.theme-light .project-card {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+/* Links in light mode */
+html.theme-light a {
+  color: #1d4ed8;
+}
+
+/* Optional: ghost button look in light mode */
+html.theme-light .btn.ghost {
+  background-color: transparent;
+  border: 1px solid #1d4ed8;
+  color: #1d4ed8;
+}
+
