@@ -118,5 +118,72 @@ body {
   font-size: 0.9rem;
   text-align: center;
 }
+/* === HEADER READABILITY FIX === */
+
+.site-header {
+  background-color: #020617;       /* solid dark background */
+  border-bottom: 1px solid #111827;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand h1 {
+  margin: 0;
+}
+
+.brand h1 a {
+  color: #f9fafb;                  /* your name = bright */
+  text-decoration: none;
+  font-size: clamp(1.25rem, 4vw, 1.75rem);
+}
+
+.brand .tag {
+  margin-top: 0.25rem;
+  color: #cbd5f5fd;                  /* softer but still readable */
+  font-size: 0.85rem;
+  max-width: 36rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav a {
+  color: #e5e7eb;                  /* nav links = light grey */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  text-decoration: underline;
+}
+/* Mobile header layout */
+@media (max-width: 640px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brand h1 a {
+    font-size: 1.25rem;         /* don’t let it get huge */
+  }
+
+  .brand .tag {
+    font-size: 0.8rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
 
 
